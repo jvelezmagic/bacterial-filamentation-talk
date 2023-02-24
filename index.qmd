@@ -53,7 +53,7 @@ fig-align="center" width="150"}
 
 # Before we begin, let's review a few key concepts
 
-## What is mathematical modelling?
+## What is mathematical modelling? {style="font-size: 35px"}
 
 ![](images/toys.png){fig-align="center"}
 
@@ -74,7 +74,7 @@ more informed decisions about how to solve problems and make things
 better.
 :::
 
-## What are antibiotics?
+## What are antibiotics? {style="font-size: 35px"}
 
 ![](images/antibiotics.png){fig-align="center"}
 
@@ -92,7 +92,7 @@ development of antibiotic resistance in bacteria, which can make
 infections more difficult to treat.
 :::
 
-## What is the SOS system?
+## What is the SOS system? {style="font-size: 35px"}
 
 ![](images/sos.webp){fig-align="center"}
 
@@ -131,7 +131,7 @@ proteins and the inhibition of cell division, which can help to prevent
 the propagation of damaged DNA.
 :::
 
-## So... What does all this have to do with bacterial filamentation?
+## So... What does all this have to do with bacterial filamentation? {style="font-size: 35px"}
 
 ![](images/bacteria-sos-system-prompt-ai.png){fig-align="center"}
 
@@ -160,7 +160,7 @@ also have downstream effects on bacterial growth and morphology,
 including filamentation.
 :::
 
-## Problem
+## Problem {style="font-size: 35px"}
 
 ![](images/pBGT_xy02_all_red+green_annotated.gif){fig-align="center"}
 
@@ -172,7 +172,7 @@ including filamentation.
 
 ## Mathematical modelling approximation {.center}
 
-## Mathematical modelling approximation
+## Mathematical modelling approximation {style="font-size: 35px"}
 
 ::: columns
 ::: column
@@ -190,11 +190,11 @@ including filamentation.
 :::
 :::
 
-## Cell dimensions relationship
+## Cell dimensions relationship {style="font-size: 35px"}
 
 ![](images/capsule.png){fig-align="center"}
 
-## Cell dimensions relationship
+## Cell dimensions relationship {style="font-size: 35px"}
 
 ![A cell can be represented as a
 capsule](images/single-bacteria.svg){style="text-align: center"
@@ -207,7 +207,7 @@ Volume = \pi \cdot r^2\:(4/3 \cdot radius + side\:length)\\
 $$
 :::
 
-## Cell dimensions relationship
+## Cell dimensions relationship {style="font-size: 35px"}
 
 ::: columns
 ::: {.column width="70%"}
@@ -219,13 +219,13 @@ $$
 :::
 :::
 
-## Cell dimensions relationship
+## Cell dimensions relationship {style="font-size: 35px"}
 
 [![](images/what-sets-bacterial-cell-size.png){fig-align="center"}](https://www.cell.com/cell/fulltext/S0092-8674(16)30648-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867416306481%3Fshowall%3Dtrue)
 
 [@harris2016]
 
-## What would happen if we consider the cell growth of a bacterium in the face of exposure to a toxic agent? {.center}
+## What would happen if we consider the cell growth of a bacterium in the face of exposure to a toxic agent? {.center style="font-size: 35px"}
 
 ## . {color="white" style="color:white; background: radial-gradient(circle at top, #ff3d3d , #d4efcc)"}
 
@@ -238,7 +238,7 @@ height="140"}
 ![](images/single-bacteria.svg){fig-align="center" width="500"
 height="140"}
 
-## Filamentation model
+## Filamentation model {style="font-size: 35px"}
 
 ::: {#filamentation-model}
 $$
@@ -260,29 +260,29 @@ description](https://jvelezmagic.github.io/bacterial-filamentation-research/03-m
 
 # Numerical results
 
-## Filamentation provides transient resistance to stressful conditions
+## Filamentation provides transient resistance to stressful conditions {style="font-size: 35px"}
 
 ![](https://raw.githubusercontent.com/jvelezmagic/CellFilamentation/main/plots/filamentation_model_ramp_signal.png){fig-align="center"}
 
-## Filamentation increases the minimum inhibitory concentration
+## Filamentation increases the minimum inhibitory concentration {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-toxin-exposure-experiment-1.svg){fig-align="center"}
 
-## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 18px"}
+## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-antitoxin-experiment-1.svg){fig-align="center"}
 
-## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 18px"}
+## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-survival-probability-1.svg){fig-align="center"}
 
 # Experimental results
 
-## Single-cell analysis of a semi-lethal pulse
+## Single-cell analysis of a semi-lethal pulse {style="font-size: 35px"}
 
 ![](images/experiment-description.png){fig-align="center"}
 
-## Single-cell analysis of a semi-lethal pulse
+## Single-cell analysis of a semi-lethal pulse {style="font-size: 35px"}
 
 -   Experimental model: *E. coli* K12 MG1655 bearing a $ColE1-like$
     (p15a) plasmid, pBGT, encoding for the $β-lactamase$ resistance gene
@@ -294,32 +294,32 @@ description](https://jvelezmagic.github.io/bacterial-filamentation-research/03-m
     $pBADgfp2$, $araC$, and the $bla_{TEM-1}$ integrated into the
     chromosome through the $λ-phage$.
 
-## Single-cell analysis of a semi-lethal pulse
+## Single-cell analysis of a semi-lethal pulse {style="font-size: 35px"}
 
 ![](images/lineages.png){fig-align="center"}
 
-## Single-cell analysis of a semi-lethal pulse - Image processing
+## Single-cell analysis of a semi-lethal pulse - Image processing {style="font-size: 35px"}
 
 ![](images/pBGT_xy02_all_panel_annotated.gif){fig-align="center"}
 
-## Summary of results obtained after tracking individual cells lineages
+## Summary of results obtained after tracking individual cells lineages {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-cell-distribution-across-experiments-1.svg){style="text-align: center"
 fig-align="center"}
 
-## Cell length and the amount of GFP are crucial for determining cell survival {style="font-size: 20px"}
+## Cell length and the amount of GFP are crucial for determining cell survival {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-gfp-temporal-distribution-1.svg){fig-align="center"}
 
-## Cell length and the amount of GFP are crucial in determining cell survival
+## Cell length and the amount of GFP are crucial for determining cell survival {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-length-temporal-distribution-1.svg){fig-align="center"}
 
-## Time to reach filamentation matters for determining cell survival
+## Time to reach filamentation matters for determining cell survival {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-time-to-filamentation-filtered-1.svg){fig-align="center"}
 
-## PCA emphasizes the importance of cell length and its GFP in cell survival
+## PCA emphasizes the importance of cell length and its GFP in cell survival {style="font-size: 35px"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -331,7 +331,7 @@ fig-align="center"}
 :::
 :::
 
-## PCA emphasizes the importance of cell length and its GFP in cell survival
+## PCA emphasizes the importance of cell length and its GFP in cell survival {style="font-size: 35px"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -343,7 +343,7 @@ fig-align="center"}
 :::
 :::
 
-## UMAP correctly represents the local structure of cell status
+## UMAP correctly represents the local structure of cell status {style="font-size: 35px"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -355,31 +355,35 @@ fig-align="center"}
 :::
 :::
 
-## Population dynamics reveal how filamentation contributes to cell survival {style="font-size: 20px"}
+## Population dynamics reveal how filamentation contributes to cell survival {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-status-with-dead-1.svg){fig-align="center"}
 
-## Population dynamics reveal how filamentation contributes to cell survival
+## Population dynamics reveal how filamentation contributes to cell survival {style="font-size: 35px"}
 
 ![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-metrics-over-time-1.svg){fig-align="center"}
 
-## Population dynamics reveal how filamentation contributes to cell survival
+## Population dynamics reveal how filamentation contributes to cell survival {style="font-size: 35px"}
 
 ![](https://raw.githubusercontent.com/jvelezmagic/CellFilamentation/main/plots/filamentation_model_ramp_signal.png){fig-align="center"}
 
-## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 20px"}
+## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 35px"}
 
 ::: columns
-::: {.column width="50%"}
-![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-proportion-living-cells-gfp-by-row-1.svg){fig-align="center"}
+::: {.column width="70%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-proportion-living-cells-gfp-by-row-1.svg){fig-align="center"
+width="1000"}
 :::
 
-::: {.column width="50%"}
-![](images/diagram-bimodal-explanation.png){width="262"}
+::: {.column width="30%"}
+<br>
+
+![](images/diagram-bimodal-explanation.png){fig-align="center"
+width="512"}
 :::
 :::
 
-## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 20px"}
+## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 35px"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -391,7 +395,7 @@ fig-align="center"}
 :::
 :::
 
-## Carrying plasmids is associated with a fitness cost in non-selective conditions
+## Carrying plasmids is associated with a fitness cost in non-selective conditions {style="font-size: 35px"}
 
 ![](images/fitness-cost.png){fig-align="center"}
 
