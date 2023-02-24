@@ -8,7 +8,7 @@ format:
     logo: ./images/jvelezmagic-logo.png
     footer: "\\@jvelezmagic"
 fig-cap-location: bottom
-self-contained: true
+self-contained: false
 bibliography: references.bib
 editor: visual
 ---
