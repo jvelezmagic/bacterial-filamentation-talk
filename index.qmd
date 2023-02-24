@@ -215,7 +215,7 @@ $$
 :::
 
 ::: {.column .smaller width="30%"}
--   Cells tends to increase its side length, but not its radius.
+-   Cells tend to increase their side length, but not their radius.
 :::
 :::
 
@@ -284,8 +284,8 @@ description](https://jvelezmagic.github.io/bacterial-filamentation-research/03-m
 
 ## Single-cell analysis of a semi-lethal pulse
 
--   Experiment model: *E. coli* K12 MG1655 bearing a $ColE1-like$ (p15a)
-    plasmid, pBGT, encoding for the $β-lactamase$ resistance gene
+-   Experimental model: *E. coli* K12 MG1655 bearing a $ColE1-like$
+    (p15a) plasmid, pBGT, encoding for the $β-lactamase$ resistance gene
     $bla_{TEM-1}$ that confers resistance to ampicillin, an $eGFPmut2$
     gene under an arabinose inducible promoter, and the $araC$
     repressor.
