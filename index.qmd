@@ -131,7 +131,7 @@ proteins and the inhibition of cell division, which can help to prevent
 the propagation of damaged DNA.
 :::
 
-## So... What does all this have to do with bacteria filamentation?
+## So... What does all this have to do with bacterial filamentation?
 
 ![](images/bacteria-sos-system-prompt-ai.png){fig-align="center"}
 
