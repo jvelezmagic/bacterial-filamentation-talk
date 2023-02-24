@@ -1,0 +1,392 @@
+---
+title: "Bacterial filamentation: a bet for survival in stressful environments"
+author: "Jesús Vélez Santiago"
+format:
+  revealjs:
+    theme: default
+    incremental: true
+    logo: ./images/jvelezmagic-logo.png
+    footer: "\\@jvelezmagic"
+fig-cap-location: bottom
+self-contained: true
+bibliography: references.bib
+editor: visual
+---
+
+## About me {#about-me}
+
+::: columns
+::: {.column style="width"}
+Genomic Scientist / Data Scientist
+
+-   Self-taught learner.
+
+-   Lover of reproducibility.
+
+-   Software development enthusiast.
+:::
+
+::: {.column style="width"}
+![](images/jvelezmagic-profile.jpg)
+:::
+:::
+
+## My goal is to create tools that help us to expand the knowledge {.center style="style"}
+
+## Thanks to my colleagues!
+
+<br>
+
+::: {layout="[[1, 1], [1, 1]]"}
+![Dr. Rafael Peña Miller](images/rpm.png){style="text-align: center" fig-align="center" width="200"}
+
+![Bruno Luviano](images/bruno.png){style="text-align: center" fig-align="center" width="200"}
+
+![Fernando Santos](images/fernando.jpeg){style="text-align: center" fig-align="center" width="200"}
+
+![Carlos Hernández](images/charly.png){style="text-align: center" fig-align="center" width="150"}
+:::
+
+# Before to start - A few concepts
+
+## What is mathematical modelling?
+
+![](images/toys.png){fig-align="center"}
+
+::: notes
+Mathematical modeling is like making a pretend version of something real, like a toy car or a dollhouse. Instead of using physical materials like plastic or wood, we use math equations and formulas to describe how the thing we're interested in works or behaves.
+
+We can use these pretend models to study all sorts of things, like how a car moves down a road, how a plant grows, or how a disease spreads. By using math to create these models, we can make predictions about what might happen in the real world, and test out different ideas and solutions without having to experiment directly on the real thing.
+
+It's a powerful tool that helps us understand complex systems and make more informed decisions about how to solve problems and make things better.
+:::
+
+## What are antibiotics?
+
+![](images/antibiotics.png){fig-align="center"}
+
+::: notes
+Antibiotics are a type of medicine that are used to treat bacterial infections. They work by killing or stopping the growth of bacteria, which helps to clear up the infection.\
+\
+Bacteria can develop resistance to antibiotics through genetic changes that allow them to survive exposure to the drugs. They can do this by producing enzymes that break down the antibiotics, altering the target sites that the drugs bind to, or pumping the antibiotics out of their cells. Overuse or misuse of antibiotics can contribute to the development of antibiotic resistance in bacteria, which can make infections more difficult to treat.
+:::
+
+## What is the SOS system?
+
+![](images/sos.webp){fig-align="center"}
+
+::: notes
+The SOS system is like a repair kit that some bacteria have to fix their DNA when it gets damaged. It's like a "Save Our Souls" system because it helps the bacteria survive when their DNA is in trouble.
+
+When bacteria get exposed to things like sunlight or certain chemicals, it can damage their DNA. That's when the SOS system kicks in. It's like an alarm that tells the bacteria to start fixing their DNA.
+
+The SOS system works by activating a group of genes that help with DNA repair. These genes create special proteins that help to fix the damaged DNA. The SOS system can also make the bacteria stop dividing, so that the damaged DNA doesn't get passed on to new cells.
+
+The SOS system is really important for bacteria because it helps them survive in tough situations. It's like a superhero power that helps them overcome obstacles and stay healthy.
+
+\-\-- notes 2
+
+The SOS system is controlled by a group of genes, including recA, lexA, and umuD. When DNA damage occurs, the recA gene is activated and produces the RecA protein. This protein helps to promote the autocatalytic cleavage of the LexA protein, which normally represses the expression of the SOS genes. Once LexA is cleaved, the SOS genes are expressed, leading to the induction of DNA repair mechanisms.
+
+The induction of the SOS system can have a number of effects on bacterial cells. It can lead to the activation of error-prone DNA repair mechanisms, which can result in mutations and increased genetic diversity. It can also lead to the production of stress response proteins and the inhibition of cell division, which can help to prevent the propagation of damaged DNA.
+:::
+
+## So... What does all this have to do with bacteria filamentation?
+
+![](images/bacteria-sos-system-prompt-ai.png){fig-align="center"}
+
+::: notes
+The SOS system is associated with bacterial filamentation, which is the process by which bacterial cells grow abnormally long and thin. When bacteria are exposed to DNA-damaging agents that activate the SOS system, one of the responses is to inhibit cell division, which can lead to filamentation.
+
+Specifically, the SOS response can activate genes that produce the SulA protein, which inhibits the activity of a protein called FtsZ that is involved in cell division. When FtsZ is inhibited, the bacterial cells cannot properly divide and instead continue to grow longer and longer, resulting in filamentous cells.
+
+Filamentation is thought to be a survival strategy for bacteria in response to DNA damage. By inhibiting cell division and becoming filamentous, the bacteria can avoid propagating damaged DNA to their offspring. Additionally, filamentous cells can have other advantages, such as increased surface area for nutrient absorption or increased resistance to antibiotics.
+
+So, while the SOS system is primarily a DNA repair mechanism, it can also have downstream effects on bacterial growth and morphology, including filamentation.
+:::
+
+## Problem
+
+![](images/pBGT_xy02_all_red+green_annotated.gif){fig-align="center"}
+
+## Why did the bacteria elongate? {.center}
+
+## 
+
+![](images/two-buttons.jpg){fig-align="center"}
+
+## Mathematical modelling approximation {.center}
+
+## Mathematical modelling approximation
+
+::: columns
+::: column
+![](images/pBGT_xy02_all_red+green_annotated.gif){fig-align="center"}
+:::
+
+::: column
+![](images/single-bacteria.svg){fig-align="center"}
+
+![](images/single-bacteria.svg)
+
+![](images/single-bacteria.svg){fig-align="right"}
+
+![](images/single-bacteria.svg){fig-align="center"}
+:::
+:::
+
+## Cell dimensions relationship
+
+![](images/capsule.png){fig-align="center"}
+
+## Cell dimensions relationship
+
+![A cell can be represented as a capsule](images/single-bacteria.svg){style="text-align: center" fig-align="center" width="488"}
+
+::: absolute
+$$
+Surface\:area = 2 \cdot \pi \cdot radius\;(2 \cdot radius + side\:length) \\
+Volume = \pi \cdot r^2\:(4/3 \cdot radius + side\:length)\\
+$$
+:::
+
+## Cell dimensions relationship
+
+::: columns
+::: {.column width="70%"}
+![](https://raw.githubusercontent.com/jvelezmagic/CellFilamentation/main/plots/cell_dimensions_relationship.svg){fig-align="center"}
+:::
+
+::: {.column .smaller width="30%"}
+-   Cells tends to increase its side length, but not its radius.
+:::
+:::
+
+## Cell dimensions relationship
+
+[![](images/what-sets-bacterial-cell-size.png){fig-align="center"}](https://www.cell.com/cell/fulltext/S0092-8674(16)30648-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867416306481%3Fshowall%3Dtrue)
+
+[@harris2016]
+
+## What would happen if we consider the cell growth of a bacterium in the face of exposure to a toxic agent? {.center}
+
+## . {color="white" style="color:white; background: radial-gradient(circle at top, #ff3d3d , #d4efcc)"}
+
+![](images/single-bacteria.svg){fig-align="center" width="500" height="140"}
+
+![](images/single-bacteria.svg){fig-align="center" width="500" height="140"}
+
+![](images/single-bacteria.svg){fig-align="center" width="500" height="140"}
+
+## Filamentation model
+
+::: {#filamentation-model}
+$$
+\begin{split}
+\frac{dT_{int}}{dt} &= T_{sa} \cdot (T_{ext}(t) - T_{vol}) - \alpha \cdot T_{ant} \cdot T_{int} \\
+\frac{dL}{dt} &=   \begin{cases}     \beta \cdot L,& \text{if } T_{int} \geq T_{sos},  t \geq \tau_{sos} + \tau_{delay} \text{ and } L < L_{max}  \\    0,            & \text{otherwise}  \end{cases}
+\end{split}
+$$
+:::
+
+where
+
+$T_{int}$ = Internal toxin
+
+$L$ = Cell length
+
+[Model description](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis.html#filamentation-model){preview-link="true"}.
+
+# Numerical results
+
+## Filamentation provides transient resistance to stressful conditions
+
+![](https://raw.githubusercontent.com/jvelezmagic/CellFilamentation/main/plots/filamentation_model_ramp_signal.png){fig-align="center"}
+
+## Filamentation increases the minimum inhibitory concentration
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-toxin-exposure-experiment-1.svg){fig-align="center"}
+
+## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 18px"}
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-antitoxin-experiment-1.svg){fig-align="center"}
+
+## Heterogeneity in the toxin-antitoxin system represents a double-edged sword in survival probability {style="font-size: 18px"}
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/03-model-analysis_files/figure-html/fig-survival-probability-1.svg){fig-align="center"}
+
+# Experimental results
+
+## Single-cell analysis of a semi-lethal pulse
+
+![](images/experiment-description.png){fig-align="center"}
+
+## Single-cell analysis of a semi-lethal pulse
+
+-   Experiment model: *E. coli* K12 MG1655 bearing a $ColE1-like$ (p15a) plasmid, pBGT, encoding for the $β-lactamase$ resistance gene $bla_{TEM-1}$ that confers resistance to ampicillin, an $eGFPmut2$ gene under an arabinose inducible promoter, and the $araC$ repressor.
+
+-   Control model: *E. coli* K12 MG1655 was used, carrying the $pBADgfp2$, $araC$, and the $bla_{TEM-1}$ integrated into the chromosome through the $λ-phage$.
+
+## Single-cell analysis of a semi-lethal pulse
+
+![](images/lineages.png){fig-align="center"}
+
+## Single-cell analysis of a semi-lethal pulse - Image processing
+
+![](images/pBGT_xy02_all_panel_annotated.gif){fig-align="center"}
+
+## Summary of results obtained after tracking individual cells lineages
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-cell-distribution-across-experiments-1.svg){style="text-align: center" fig-align="center"}
+
+## Cell length and the amount of GFP are crucial for determining cell survival {style="font-size: 20px"}
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-gfp-temporal-distribution-1.svg){fig-align="center"}
+
+## Cell length and the amount of GFP are crucial in determining cell survival
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-length-temporal-distribution-1.svg){fig-align="center"}
+
+## Time to reach filamentation matters for determining cell survival
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-time-to-filamentation-filtered-1.svg){fig-align="center"}
+
+## PCA emphasizes the importance of cell length and its GFP in cell survival
+
+::: columns
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-chromosome-pca-new-coordinates-1.svg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-chromosome-pca-variable-contribution-1.svg){fig-align="center"}
+:::
+:::
+
+## PCA emphasizes the importance of cell length and its GFP in cell survival
+
+::: columns
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-plasmid-pca-new-coordinates-1.svg)
+:::
+
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-plasmid-pca-variable-contribution-1.svg)
+:::
+:::
+
+## UMAP correctly represents the local structure of cell states
+
+::: columns
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-chromosome-umap-new-coordinates-1.svg)
+:::
+
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-plasmid-umap-new-coordinates-1.svg)
+:::
+:::
+
+## Population dynamics reveal how filamentation contributes to cell survival {style="font-size: 20px"}
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-status-with-dead-1.svg){fig-align="center"}
+
+## Population dynamics reveal how filamentation contributes to cell survival
+
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-metrics-over-time-1.svg){fig-align="center"}
+
+## Population dynamics reveal how filamentation contributes to cell survival
+
+![](https://raw.githubusercontent.com/jvelezmagic/CellFilamentation/main/plots/filamentation_model_ramp_signal.png){fig-align="center"}
+
+## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 20px"}
+
+::: columns
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-proportion-living-cells-gfp-by-row-1.svg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](images/diagram-bimodal-explanation.png){width="262"}
+:::
+:::
+
+## Heterogeneity in plasmid copy-number allows various forms of survival in addition to filamentation {style="font-size: 20px"}
+
+::: columns
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-gfp-survival-probability-1.svg)
+:::
+
+::: {.column width="50%"}
+![](https://jvelezmagic.github.io/bacterial-filamentation-research/02-experiment-analysis_files/figure-html/fig-length-survival-probability-1.svg)
+:::
+:::
+
+## Carrying plasmids is associated with a fitness cost in non-selective conditions
+
+![](images/fitness-cost.png){fig-align="center"}
+
+## Recapitulation of experimental analysis
+
+![](images/microscopy-montage-microfluidics.png){fig-align="center"}
+
+[@hernandez-beltran2022]
+
+# Science must be open and reproducible to anyone who wants to learn more
+
+## Science must be open and reproducible to anyone who wants to learn more
+
+-   <https://jvelezmagic.github.io/bacterial-filamentation-research/>
+
+-   <https://jvelezmagic.github.io/bacterial-filamentation-research/98-appendices.html>
+
+## Thanks to my colleagues!
+
+<br>
+
+::: {layout="[[1, 1], [1, 1]]"}
+![Rafael Peña-Miller](images/rpm.png){style="text-align: center" fig-align="center" width="200"}
+
+![Bruno Luviano](images/bruno.png){style="text-align: center" fig-align="center" width="200"}
+
+![Fernando Santos](images/fernando.jpeg){style="text-align: center" fig-align="center" width="200"}
+
+![Carlos Hernández](images/charly.png){style="text-align: center" fig-align="center" width="150"}
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+### Questions?
+
+<br>
+
+![](https://c.tenor.com/6k7BkSwTEd4AAAAC/kung-fu-panda.gif)
+:::
+
+::: {.column width="50%" style="text-align: left"}
+::: {style="text-align: right"}
+<br>
+
+<br>
+
+![](images/jvelezmagic-profile.jpg){width="150px" style="border-radius: 50%;"}
+
+### Thank you!
+
+#### Find me at...
+
+[{{< fa brands twitter >}}\@jvelezmagic](https://twitter.com/jvelezmagic)
+
+[{{< fa brands github >}}\@jvelezmagic](https://github.com/jvelezmagic)
+
+[{{< fa blog >}}jvelezmagic.com](https://jvelezmagic.com/)
+:::
+:::
+:::
+
+## References
