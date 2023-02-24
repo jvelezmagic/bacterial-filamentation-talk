@@ -343,7 +343,7 @@ fig-align="center"}
 :::
 :::
 
-## UMAP correctly represents the local structure of cell states
+## UMAP correctly represents the local structure of cell status
 
 ::: columns
 ::: {.column width="50%"}
