@@ -51,7 +51,7 @@ fig-align="center" width="200"}
 fig-align="center" width="150"}
 :::
 
-# Before to start - A few concepts
+# Before we begin, let's review a few key concepts
 
 ## What is mathematical modelling?
 
